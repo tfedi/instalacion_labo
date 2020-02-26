@@ -1,14 +1,10 @@
-#SUBLIME
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-#FIN
 #GNS3
 add-apt-repository -y ppa:gns3/ppa
 #FIN
 #VARIOS
 apt-get update
 apt-get -y upgrade
-apt-get -y install apache2 mysql-server mysql-workbench build-essential chromium-browser python-mysqldb libmysqlclient-dev python python-setuptools python-dev python3 python3-setuptools python3-dev libxml2-dev libxslt-dev  python-all-dev python-wheel python3-all-dev python3-wheel python-pip python3-pip codeblocks gimp inkscape shutter meld htop git curl openssh-server wireshark arduino libqt5script5 libqt5scripttools5 libssl-dev snapd sublime-text lamp-server^ gns3-gui virtualbox virtualbox-qt dkms libqt5webkit5 nodejs npm
+apt-get -y install apache2 mysql-server mysql-workbench build-essential chromium-browser python-mysqldb libmysqlclient-dev python python-setuptools python-dev python3 python3-setuptools python3-dev libxml2-dev libxslt-dev  python-all-dev python-wheel python3-all-dev python3-wheel python-pip python3-pip codeblocks gimp inkscape shutter meld htop git curl openssh-server wireshark arduino libqt5script5 libqt5scripttools5 libssl-dev snapd lamp-server^ gns3-gui virtualbox virtualbox-qt dkms libqt5webkit5 nodejs npm
 #FIN
 #CONFIG WIRESHARK
 groupadd wireshark
