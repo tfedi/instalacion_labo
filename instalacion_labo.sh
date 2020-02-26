@@ -74,5 +74,7 @@ sudo dpkg -i libicu52_52.1-3ubuntu0.8_amd64.deb
 wget http://ftp.debian.org/debian/pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u3_amd64.deb
 sudo dpkg -i libpng12-0_1.2.50-2+deb8u3_amd64.deb
 #FIN
-
+#BORRADO TEMPS
+sudo rm -f lib*
+#FIN
 
