@@ -4,7 +4,7 @@ add-apt-repository -y ppa:gns3/ppa
 #VARIOS
 apt-get update
 apt-get -y upgrade
-apt-get -y install curl apache2 mysql-server mysql-workbench build-essential chromium-browser python-mysqldb libmysqlclient-dev python python-setuptools python-dev python3 python3-setuptools python3-dev libxml2-dev libxslt-dev  python-all-dev python-wheel python3-all-dev python3-wheel python-pip python3-pip codeblocks gimp inkscape shutter meld htop git curl openssh-server wireshark libqt5script5 libqt5scripttools5 libssl-dev snapd lamp-server^ gns3-gui virtualbox virtualbox-qt dkms libqt5webkit5 
+apt-get -y install curl apache2 mysql-server mysql-workbench build-essential chromium-browser python-mysqldb libmysqlclient-dev python python-setuptools python-dev python3 python3-setuptools python3-dev libxml2-dev libxslt-dev  python-all-dev python-wheel python3-all-dev python3-wheel python-pip python3-pip codeblocks gimp inkscape shutter meld htop git curl openssh-server wireshark libqt5script5 libqt5scripttools5 libssl-dev snapd lamp-server^ gns3-gui virtualbox virtualbox-qt dkms libqt5webkit5 dirmngr apt-transport-https lsb-release ca-certificates
 #FIN
 #CONFIG WIRESHARK
 groupadd wireshark
@@ -16,6 +16,8 @@ setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
 getcap /usr/bin/dumpcap
 #FIN
 #NODE
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt -y install nodejs
 curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | sudo bash
 #FIN
 #ARDUINO
