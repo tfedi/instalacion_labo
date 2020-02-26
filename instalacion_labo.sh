@@ -54,26 +54,6 @@ sudo pip3 install mysqlclient
 #IONIC
 npm install -g ionic
 #FIN
-#MYSQLCONFIG
-USE mysql;
-UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-FLUSH PRIVILEGES;
-exit;
-sudo systemctl restart mysql.service
-sudo mysql_secure_installation
-sudo service mysql stop
-sudo mkdir -p /var/run/mysqld
-sudo chown mysql:mysql /var/run/mysqld
-sudo /usr/sbin/mysqld --skip-grant-tables --skip-networking &
-mysql -u root
-FLUSH PRIVILEGES;
-USE mysql;
-UPDATE user SET authentication_string=PASSWORD("alumnoipm") WHERE User='root';
-UPDATE user SET plugin="mysql_native_password" WHERE User='root';
-quit
-sudo pkill mysqld    
-sudo service mysql start
-#FIN
 #LIBQT
 sudo apt-get install libqt5webkit5 libqt5multimediawidgets5 libqt5svg5 libqt5script5 libqt5scripttools5 libqt5sql5
 #FIN
